@@ -1,0 +1,11 @@
+.d-block{
+    background-size: cover;
+    height: 500px;
+    width: 100px;
+}
+
+.carrusel{
+    margin-top: 100px;
+    margin-left: 550px;
+    width: 800px;
+}
