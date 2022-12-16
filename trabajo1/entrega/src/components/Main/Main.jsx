@@ -1,13 +1,14 @@
 import React from "react";
 import "./estilos.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 export default function(){
     return (
     
 <div>
     <main className='main'>
+
         <article>
             <img className='imagenes' src="https://cdn.cloudflare.steamstatic.com/steam/apps/202970/capsule_616x353.jpg?t=1654830020" alt="bo2" />
             <h3>Call of Duty: Black Ops 2</h3>
@@ -31,9 +32,7 @@ export default function(){
             <h3>Resident Evil 2</h3>
             <button className='boton'><FontAwesomeIcon icon={faCartShopping}/></button>
         </article>
-
-
-
+        
     </main>
 </div>
     );
