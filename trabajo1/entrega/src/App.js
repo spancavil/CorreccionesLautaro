@@ -1,8 +1,9 @@
 import './App.css';
 import Navbar from './components/NavBar';
 import ItemListContainer from './containers/ItemListeContainer';
-import Main from './components/Main/Main';
+import Main from './components/Main';
 import Carrusel from './components/Carrusel';
+import Footer from "./components/Footer"
 
 
 
@@ -28,7 +29,7 @@ function App() {
 
         <Main/>
 
-
+        <Footer/>
       </body>
 
     </div>

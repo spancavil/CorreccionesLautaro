@@ -10,7 +10,7 @@ export default function({ofertas,noticias,categorias}){
     <div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">StoreGames</a>
+            <a class="navbar-brand" href="#"><p className="titulo">StoreGames</p></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,16 +24,20 @@ export default function({ofertas,noticias,categorias}){
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    {categorias}
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{categorias}
                     </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Accion</a></li>
-                    <li><a class="dropdown-item" href="#">Aventura</a></li>
-                    <li><a class="dropdown-item" href="#">Deportes</a></li>
-                    <li><a class="dropdown-item" href="#">Supervivencia</a></li>
-                    <li><a class="dropdown-item" href="#">Mundo Abierto</a></li>
-                    <li><a class="dropdown-item" href="#">Free to play</a></li>
+                    <li><a class="dropdown-item" href="#">Shooters</a></li>
+                    <li><a className="dropdown-item" href="#">Aventura</a></li>
+                    <li><a className="dropdown-item" href="#">Deportes</a></li>
+                    <li><a className="dropdown-item" href="#">Supervivencia</a></li>
+                    <li><a className="dropdown-item" href="#">Mundo Abierto</a></li>
+                    <li><a className="dropdown-item" href="#">Free to play</a></li>
+                    <li><a className="dropdown-item" href="#">Survival Horror</a></li>
+                    <li><a className="dropdown-item" href="#">Zombies</a></li>
+                    <li><a className="dropdown-item" href="#">Terror</a></li>
+                    <li><a className="dropdown-item" href="#">Clasicos</a></li>
+
                 </ul>
                 </li>
 
