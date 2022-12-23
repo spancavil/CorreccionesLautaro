@@ -1,12 +1,12 @@
 import React from 'react'
-import Main from '../Main'
+import Item from "../Item"
 
 
 export const ItemList  = ({productos}) => {
     return (
     <div>
         {productos.map(producto =>{
-            return <Main product={producto}/>
+            return <Item product={producto}/>
         })}
     </div>
     )

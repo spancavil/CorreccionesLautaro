@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping, faPlus, faX, faCheck, faTrash } from '@fortawesome/free-solid-svg-icons'
 import { useState } from "react";
 
-export default function({product}){
+export default function(){
 
     const [cont, carrito] = useState(0)
     const [block, bloquear] = useState(false)
@@ -106,13 +106,6 @@ return (
             <h3>Terror<button className="mas"><FontAwesomeIcon icon={faPlus}/></button></h3>
             <img className='imagenes'src= "https://sitiodelegir.files.wordpress.com/2015/08/fredbear.png?w=640" alt="resident" />
             <h3>Five Nights at Freddy's 4</h3>
-            <button className='boton'><FontAwesomeIcon icon={faCartShopping}/></button>
-        </article>
-
-        <article>
-            <h3>{product.titulo}<button className="mas"><FontAwesomeIcon icon={faPlus}/></button></h3>
-            <img className='imagenes'src={product.img} alt="resident" />
-            <h3>{product.nombre}</h3>
             <button className='boton'><FontAwesomeIcon icon={faCartShopping}/></button>
         </article>
         
