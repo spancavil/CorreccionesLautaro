@@ -1,19 +1,55 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./estilos.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping, faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping, faPlus, faX, faCheck, faTrash } from '@fortawesome/free-solid-svg-icons'
+import { useState } from "react";
 
-export default function(){
-    return (
-    
+export default function({product}){
+
+    const [cont, carrito] = useState(0)
+    const [block, bloquear] = useState(false)
+
+    const agregar = () =>{
+        carrito(cont + 1)
+
+    }
+
+    const quitar = () =>{
+
+        if(!block){
+            carrito(cont -1)
+        }
+        
+    }
+
+
+    const finalizar = () =>{
+
+        carrito(cont - cont)
+    }
+
+    useEffect(()=>{
+        if(cont === 0){
+            bloquear(true)
+        }
+
+        else if(cont > 0){
+            bloquear(false)
+        }   
+
+    })
+
+return (
+
 <div>
     <main className='main'>
 
-        <article>
+
+    <article>
             <h3>Shooters<button className="mas"><FontAwesomeIcon icon={faPlus}/></button></h3>
             <img className='imagenes' src="https://cdn.cloudflare.steamstatic.com/steam/apps/202970/capsule_616x353.jpg?t=1654830020" alt="bo2" />
             <h3>Call of Duty: Black Ops 2</h3>
-            <button className='boton'><FontAwesomeIcon icon={faCartShopping}/></button>
+            <button className='boton'onClick={agregar}><FontAwesomeIcon icon={faCartShopping}/></button>
         </article>
 
         <article>
@@ -74,13 +110,31 @@ export default function(){
         </article>
 
         <article>
+            <h3>{product.titulo}<button className="mas"><FontAwesomeIcon icon={faPlus}/></button></h3>
+            <img className='imagenes'src={product.img} alt="resident" />
+            <h3>{product.nombre}</h3>
+            <button className='boton'><FontAwesomeIcon icon={faCartShopping}/></button>
+        </article>
+        
+        <article>
             <h3>Clasicos<button className="mas"><FontAwesomeIcon icon={faPlus}/></button></h3>
             <img className='imagenes'src= "https://i.cnnturk.com/i/cnnturk/75/740x416/60feabc4c8c37312bcfe2d98.jpg" alt="resident" />
             <h3>GTA: San Andreas</h3>
             <button className='boton'><FontAwesomeIcon icon={faCartShopping}/></button>
         </article>
+
         
+
     </main>
+        <p><FontAwesomeIcon icon={faCartShopping} className="carrito"/>
+            <span className="span">{cont}</span>
+        </p>
+        <button className="X"><FontAwesomeIcon icon={faX} onClick={quitar}/></button>
+        <button className="check"><FontAwesomeIcon icon={faCheck} onClick= {finalizar}/></button>
+        <button className="trash"><FontAwesomeIcon icon={faTrash} onClick= {finalizar}/></button>
+        
 </div>
     );
 }
+
+

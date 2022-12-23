@@ -1,7 +1,5 @@
 import React from "react";
 import "./estilos.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function({ofertas,noticias,categorias}){
@@ -46,9 +44,6 @@ export default function({ofertas,noticias,categorias}){
             </ul>
             </div>
         </div>  
-        <p><FontAwesomeIcon icon={faCartShopping} className="carrito"/>
-        <span className="span">2</span>
-        </p>
     </nav>
     </div>
     )

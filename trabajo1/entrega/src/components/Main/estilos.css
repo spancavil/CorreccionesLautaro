@@ -45,3 +45,70 @@
 .mas{
     margin-left: 5px;
 }
+
+
+.none{
+    display: none;
+}
+
+
+.span{
+    color:white;
+    position: relative;
+    top: -2580px;
+    left: 1745px;
+    
+}
+
+
+.carrito{
+    color: white;
+    height: 27px;
+    margin-top: 25px;
+    margin-right: 50px;
+    position: relative;
+    top: -2560px;
+    left: 1785px;
+}
+
+.carrito:hover{
+    color: green;
+}
+
+
+.X{
+    color: red;
+    background-color: black;
+    position: relative;
+    top: -2560px;
+    left: 1735px;
+}
+
+
+.X:hover{
+    background-color: red;
+    color: black;
+}
+
+.check{
+    position: relative;
+    top: -2560px;
+    left: 1745px;
+    background-color: lightgreen;
+}
+
+.check:hover{
+    background-color: black;
+    color: lightgreen;
+}
+
+.trash{
+    position: relative;
+    top: -2560px;
+    left: 1755px;
+}
+
+.trash:hover{
+    background-color: black;
+    color: white;
+}
