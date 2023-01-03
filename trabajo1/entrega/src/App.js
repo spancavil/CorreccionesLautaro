@@ -1,9 +1,11 @@
 import './App.css';
 import Navbar from './components/NavBar';
-import ItemListContainer from './containers/ItemListeContainer';
+import ItemListContainer from "../src/containers/ItemListeContainer"
 import Main from './components/Main';
 import Carrusel from './components/Carrusel';
 import Footer from "./components/Footer"
+import Productos from './containers/Productos';
+import Detail from "./containers/ItemDetail";
 
 
 
@@ -30,6 +32,9 @@ function App() {
 
 
         <Main/>
+        <Productos></Productos>
+
+        <Detail></Detail>
 
         <Footer/>
       </body>
