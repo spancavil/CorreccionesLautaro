@@ -12,7 +12,6 @@ const ItemDetailContainer = () => {
     const {id} = useParams()
     console.log(id)
 
-
     useEffect(()=>{
         const getProducts = () => {
 
@@ -38,11 +37,14 @@ const ItemDetailContainer = () => {
         getProducts()
     },[id])
 
-
-
     return (
         <div>
+        {
+            Object.keys(detail).length ?
             <ItemDetail detail={detail}></ItemDetail>
+            :
+            null
+        }
         </div>
     )
 }
