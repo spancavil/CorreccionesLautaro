@@ -1,12 +1,13 @@
 import React from 'react'
-
-
-const Detail = ({productos}) => {
-    return (
-        <div>
-            <h1>{productos.title}</h1>
-        </div>
-    )
+import "./estilos.css"
+const Detail = ({DetailMap}) => {
+  return (
+    <div>
+        <h1>{DetailMap.titulo}</h1>
+        <img src={DetailMap.img}/>
+        
+    </div>
+  )
 }
 
 export default Detail
